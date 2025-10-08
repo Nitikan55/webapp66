@@ -49,24 +49,36 @@
                             <div class="form-group">
                                 <label for="name">First Name</label>
                                 <input type="text" class="form-control" id="f-name" name="name" placeholder="First name">
+                                @error('name')
+                                    <span class="text-danger">{{ $message }}</span>
+                                @enderror
                             </div>
                         </div> 
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label for="email">Email</label>
                                 <input type="email" class="form-control" name="email" id="email-address" placeholder="Enter a valid mail">
+                                @error('name')
+                                    <span class="text-danger">{{ $message }}</span>
+                                @enderror
                             </div>
                         </div>
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label for="password-s">Password</label>
                                 <input type="password" class="form-control" id="password-s" name="password" placeholder="A strong password">
+                                @error('name')
+                                    <span class="text-danger">{{ $message }}</span>
+                                @enderror
                             </div>
                         </div>
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label for="password_confirmation">Confirm-Password</label>
                                 <input type="password_confirmation" class="form-control" id="password-s" name="password_confirmation" placeholder="A strong password">
+                                @error('name')
+                                    <span class="text-danger">{{ $message }}</span>
+                                @enderror
                             </div>
                         </div>
                         <div class="col-md-12">
