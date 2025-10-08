@@ -61,7 +61,7 @@
                         <div class="col-md-12">
                             <button class="btn btn-primary" type="submit">Login</button>
 
-                            <p class="mt-5 mb-0">Not a member yet? <a href="signup.html">Register Here</a></p>
+                            <p class="mt-5 mb-0">Not a member yet? <a href="{{ route('register') }}">Register Here</a></p>
                         </div>
                     </form>
                 </div>
