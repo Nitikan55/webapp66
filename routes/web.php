@@ -1,5 +1,5 @@
 <?php
-
+use App\Http\Controllers\UserdataController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -30,7 +30,6 @@ Route::get('/register', function () {
     return view('auth.register');
 })->name('register');
 
-
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
@@ -39,4 +38,8 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+
+    Route::get('/userdata', 
+    [UserdataController::class, 'index'
+    ])->name('userdata');
 });
